@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36FA2525">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="226dp"
+        android:layout_height="283dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="93dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/square" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="A=s*s"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Side"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/var2"
+        android:layout_width="132dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="The Area is*"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/var2"
+        app:layout_constraintStart_toStartOf="@+id/var2"
+        app:layout_constraintTop_toBottomOf="@+id/var2" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/answer"
+        app:layout_constraintStart_toStartOf="@+id/answer"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

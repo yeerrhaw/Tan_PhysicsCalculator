@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36FA2525">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="306dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rhombus" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="171dp"
+        android:text="A=l*w"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:text="l="
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/var1"
+        app:layout_constraintEnd_toEndOf="@+id/var1"
+        app:layout_constraintStart_toStartOf="@+id/var1" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="8dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="216dp"
+        android:text="l"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:text="w="
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/var2"
+        app:layout_constraintEnd_toEndOf="@+id/var2"
+        app:layout_constraintStart_toStartOf="@+id/var2" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="68dp"
+        android:text="w"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="31dp"
+        android:text="The Area is*"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/var2"
+        app:layout_constraintStart_toStartOf="@+id/var2"
+        app:layout_constraintTop_toBottomOf="@+id/var2" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/answer"
+        app:layout_constraintStart_toStartOf="@+id/answer"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <EditText
+        android:id="@+id/var1"
+        android:layout_width="134dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="55dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/var2"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="87dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/var1"
+        app:layout_constraintStart_toStartOf="@+id/var1"
+        app:layout_constraintTop_toBottomOf="@+id/var1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

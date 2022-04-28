@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36FA2525">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="141dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="135dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sphere" />
+
+    <EditText
+        android:id="@+id/var1"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="112dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="The Volume is*"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/var1"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="114dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/var1"
+        app:layout_constraintStart_toStartOf="@+id/var1"
+        app:layout_constraintTop_toBottomOf="@+id/var1" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="127dp"
+        android:text="V=4/3 π(r*r*r)"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="r="
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/var1"
+        app:layout_constraintEnd_toEndOf="@+id/var1"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="@+id/var1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
